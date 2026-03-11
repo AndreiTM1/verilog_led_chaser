@@ -11,7 +11,7 @@ reg clk_i;
 reg rst_ni;
 wire [LED_COUNT-1:0] led_o;
 
-counter #(
+chaser #(
     .LED  (LED_COUNT),
     .WIDTH(BITS)
 ) dut (
