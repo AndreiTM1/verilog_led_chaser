@@ -1,5 +1,5 @@
 Flow report for led_chaser
-Fri Mar 13 13:30:30 2026
+Fri Mar 13 14:05:34 2026
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Flow Summary                                                                        ;
 +------------------------------------+------------------------------------------------+
-; Flow Status                        ; Successful - Fri Mar 13 13:30:30 2026          ;
+; Flow Status                        ; Successful - Fri Mar 13 14:05:34 2026          ;
 ; Quartus Prime Version              ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
 ; Revision Name                      ; led_chaser                                     ;
 ; Top-level Entity Name              ; DE10_LITE_Golden_Top                           ;
@@ -67,7 +67,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/13/2026 13:29:53 ;
+; Start date & time ; 03/13/2026 14:04:56 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; led_chaser          ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+----------------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name          ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+----------------------+------------+
-; COMPILER_SIGNATURE_ID               ; 70481893237496.177340139344234         ; --            ; --                   ; --         ;
+; COMPILER_SIGNATURE_ID               ; 70481893237496.177340349646098         ; --            ; --                   ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --                   ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --                   ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; DE10_LITE_Golden_Top ; Top        ;
@@ -96,10 +96,10 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:17     ; 1.0                     ; 463 MB              ; 00:00:42                           ;
-; Fitter               ; 00:00:12     ; 1.0                     ; 1390 MB             ; 00:00:18                           ;
-; Assembler            ; 00:00:04     ; 1.0                     ; 402 MB              ; 00:00:05                           ;
-; Total                ; 00:00:33     ; --                      ; --                  ; 00:01:05                           ;
+; Analysis & Synthesis ; 00:00:17     ; 1.0                     ; 463 MB              ; 00:00:41                           ;
+; Fitter               ; 00:00:12     ; 1.0                     ; 1394 MB             ; 00:00:18                           ;
+; Assembler            ; 00:00:05     ; 1.0                     ; 393 MB              ; 00:00:05                           ;
+; Total                ; 00:00:34     ; --                      ; --                  ; 00:01:04                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

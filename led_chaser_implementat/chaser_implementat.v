@@ -1,7 +1,7 @@
 module chaser_implementat #(
     parameter LED   = 10,
     parameter WIDTH = 25,
-	 parameter SPEED = 25)
+	parameter SPEED = 25)
 (
     input                  clk_i,
     input                  rst_ni,
