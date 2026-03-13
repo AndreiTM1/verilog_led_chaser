@@ -1,5 +1,5 @@
 Fitter report for led_chaser
-Wed Mar 11 18:43:44 2026
+Fri Mar 13 13:30:23 2026
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
@@ -67,17 +67,17 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                      ;
 +------------------------------------+------------------------------------------------+
-; Fitter Status                      ; Successful - Wed Mar 11 18:43:44 2026          ;
+; Fitter Status                      ; Successful - Fri Mar 13 13:30:23 2026          ;
 ; Quartus Prime Version              ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
 ; Revision Name                      ; led_chaser                                     ;
 ; Top-level Entity Name              ; DE10_LITE_Golden_Top                           ;
 ; Family                             ; MAX 10                                         ;
 ; Device                             ; 10M50DAF484C6GES                               ;
 ; Timing Models                      ; Preliminary                                    ;
-; Total logic elements               ; 43 / 49,760 ( < 1 % )                          ;
-;     Total combinational functions  ; 43 / 49,760 ( < 1 % )                          ;
-;     Dedicated logic registers      ; 34 / 49,760 ( < 1 % )                          ;
-; Total registers                    ; 34                                             ;
+; Total logic elements               ; 59 / 49,760 ( < 1 % )                          ;
+;     Total combinational functions  ; 59 / 49,760 ( < 1 % )                          ;
+;     Dedicated logic registers      ; 36 / 49,760 ( < 1 % )                          ;
+; Total registers                    ; 36                                             ;
 ; Total pins                         ; 185 / 360 ( 51 % )                             ;
 ; Total virtual pins                 ; 0                                              ;
 ; Total memory bits                  ; 0 / 1,677,312 ( 0 % )                          ;
@@ -158,7 +158,7 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-8         ;   0.2%      ;
+;     Processors 2-8         ;   0.3%      ;
 +----------------------------+-------------+
 
 
@@ -168,8 +168,8 @@ https://fpgasoftware.intel.com/eula.
 ; Type                ; Total [A + B]      ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+--------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                    ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 538 ) ; 0.00 % ( 0 / 538 )         ; 0.00 % ( 0 / 538 )       ;
-;     -- Achieved     ; 0.00 % ( 0 / 538 ) ; 0.00 % ( 0 / 538 )         ; 0.00 % ( 0 / 538 )       ;
+;     -- Requested    ; 0.00 % ( 0 / 556 ) ; 0.00 % ( 0 / 556 )         ; 0.00 % ( 0 / 556 )       ;
+;     -- Achieved     ; 0.00 % ( 0 / 556 ) ; 0.00 % ( 0 / 556 )         ; 0.00 % ( 0 / 556 )       ;
 ;                     ;                    ;                            ;                          ;
 ; Routing (by net)    ;                    ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )   ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -192,7 +192,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 522 )    ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 540 )    ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 16 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -200,7 +200,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/output_files/led_chaser.pin.
+The pin-out file can be found in /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/output_files/led_chaser.pin.
 
 
 +---------------------------------------------------------------------+
@@ -208,26 +208,26 @@ The pin-out file can be found in /home/andreitm/Documents/proiectele_mele/led_ch
 +---------------------------------------------+-----------------------+
 ; Resource                                    ; Usage                 ;
 +---------------------------------------------+-----------------------+
-; Total logic elements                        ; 43 / 49,760 ( < 1 % ) ;
-;     -- Combinational with no register       ; 9                     ;
+; Total logic elements                        ; 59 / 49,760 ( < 1 % ) ;
+;     -- Combinational with no register       ; 23                    ;
 ;     -- Register only                        ; 0                     ;
-;     -- Combinational with a register        ; 34                    ;
+;     -- Combinational with a register        ; 36                    ;
 ;                                             ;                       ;
 ; Logic element usage by number of LUT inputs ;                       ;
-;     -- 4 input functions                    ; 7                     ;
-;     -- 3 input functions                    ; 2                     ;
-;     -- <=2 input functions                  ; 34                    ;
+;     -- 4 input functions                    ; 8                     ;
+;     -- 3 input functions                    ; 9                     ;
+;     -- <=2 input functions                  ; 42                    ;
 ;     -- Register only                        ; 0                     ;
 ;                                             ;                       ;
 ; Logic elements by mode                      ;                       ;
-;     -- normal mode                          ; 21                    ;
-;     -- arithmetic mode                      ; 22                    ;
+;     -- normal mode                          ; 35                    ;
+;     -- arithmetic mode                      ; 24                    ;
 ;                                             ;                       ;
-; Total registers*                            ; 34 / 51,509 ( < 1 % ) ;
-;     -- Dedicated logic registers            ; 34 / 49,760 ( < 1 % ) ;
+; Total registers*                            ; 36 / 51,509 ( < 1 % ) ;
+;     -- Dedicated logic registers            ; 36 / 49,760 ( < 1 % ) ;
 ;     -- I/O registers                        ; 0 / 1,749 ( 0 % )     ;
 ;                                             ;                       ;
-; Total LABs:  partially or completely used   ; 4 / 3,110 ( < 1 % )   ;
+; Total LABs:  partially or completely used   ; 6 / 3,110 ( < 1 % )   ;
 ; Virtual pins                                ; 0                     ;
 ; I/O pins                                    ; 185 / 360 ( 51 % )    ;
 ;     -- Clock pins                           ; 4 / 8 ( 50 % )        ;
@@ -248,11 +248,11 @@ The pin-out file can be found in /home/andreitm/Documents/proiectele_mele/led_ch
 ; Oscillator blocks                           ; 0 / 1 ( 0 % )         ;
 ; Impedance control blocks                    ; 0 / 1 ( 0 % )         ;
 ; Average interconnect usage (total/H/V)      ; 0.0% / 0.0% / 0.0%    ;
-; Peak interconnect usage (total/H/V)         ; 0.3% / 0.3% / 0.1%    ;
-; Maximum fan-out                             ; 34                    ;
-; Highest non-global fan-out                  ; 34                    ;
-; Total fan-out                               ; 487                   ;
-; Average fan-out                             ; 0.91                  ;
+; Peak interconnect usage (total/H/V)         ; 0.6% / 0.6% / 0.6%    ;
+; Maximum fan-out                             ; 36                    ;
+; Highest non-global fan-out                  ; 36                    ;
+; Total fan-out                               ; 536                   ;
+; Average fan-out                             ; 0.96                  ;
 +---------------------------------------------+-----------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -265,26 +265,26 @@ The pin-out file can be found in /home/andreitm/Documents/proiectele_mele/led_ch
 +---------------------------------------------+----------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                  ; Low                            ;
 ;                                             ;                      ;                                ;
-; Total logic elements                        ; 43 / 49760 ( < 1 % ) ; 0 / 49760 ( 0 % )              ;
-;     -- Combinational with no register       ; 9                    ; 0                              ;
+; Total logic elements                        ; 59 / 49760 ( < 1 % ) ; 0 / 49760 ( 0 % )              ;
+;     -- Combinational with no register       ; 23                   ; 0                              ;
 ;     -- Register only                        ; 0                    ; 0                              ;
-;     -- Combinational with a register        ; 34                   ; 0                              ;
+;     -- Combinational with a register        ; 36                   ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Logic element usage by number of LUT inputs ;                      ;                                ;
-;     -- 4 input functions                    ; 7                    ; 0                              ;
-;     -- 3 input functions                    ; 2                    ; 0                              ;
-;     -- <=2 input functions                  ; 34                   ; 0                              ;
+;     -- 4 input functions                    ; 8                    ; 0                              ;
+;     -- 3 input functions                    ; 9                    ; 0                              ;
+;     -- <=2 input functions                  ; 42                   ; 0                              ;
 ;     -- Register only                        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Logic elements by mode                      ;                      ;                                ;
-;     -- normal mode                          ; 21                   ; 0                              ;
-;     -- arithmetic mode                      ; 22                   ; 0                              ;
+;     -- normal mode                          ; 35                   ; 0                              ;
+;     -- arithmetic mode                      ; 24                   ; 0                              ;
 ;                                             ;                      ;                                ;
-; Total registers                             ; 34                   ; 0                              ;
-;     -- Dedicated logic registers            ; 34 / 49760 ( < 1 % ) ; 0 / 49760 ( 0 % )              ;
+; Total registers                             ; 36                   ; 0                              ;
+;     -- Dedicated logic registers            ; 36 / 49760 ( < 1 % ) ; 0 / 49760 ( 0 % )              ;
 ;     -- I/O registers                        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
-; Total LABs:  partially or completely used   ; 4 / 3110 ( < 1 % )   ; 0 / 3110 ( 0 % )               ;
+; Total LABs:  partially or completely used   ; 6 / 3110 ( < 1 % )   ; 0 / 3110 ( 0 % )               ;
 ;                                             ;                      ;                                ;
 ; Virtual pins                                ; 0                    ; 0                              ;
 ; I/O pins                                    ; 185                  ; 0                              ;
@@ -302,8 +302,8 @@ The pin-out file can be found in /home/andreitm/Documents/proiectele_mele/led_ch
 ;     -- Registered Output Connections        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Internal Connections                        ;                      ;                                ;
-;     -- Total Connections                    ; 493                  ; 8                              ;
-;     -- Registered Connections               ; 78                   ; 0                              ;
+;     -- Total Connections                    ; 542                  ; 8                              ;
+;     -- Registered Connections               ; 91                   ; 0                              ;
 ;                                             ;                      ;                                ;
 ; External Connections                        ;                      ;                                ;
 ;     -- Top                                  ; 142                  ; 0                              ;
@@ -338,9 +338,9 @@ The pin-out file can be found in /home/andreitm/Documents/proiectele_mele/led_ch
 ; ADC_CLK_10     ; N5    ; 2        ; 0            ; 23           ; 21           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL           ; --                        ; User                 ; 0         ;
 ; GSENSOR_INT[1] ; Y14   ; 4        ; 51           ; 0            ; 0            ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL           ; --                        ; User                 ; 0         ;
 ; GSENSOR_INT[2] ; Y13   ; 4        ; 51           ; 0            ; 7            ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL           ; --                        ; User                 ; 0         ;
-; KEY[0]         ; B8    ; 7        ; 46           ; 54           ; 28           ; 34                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3 V Schmitt Trigger ; --                        ; User                 ; 0         ;
+; KEY[0]         ; B8    ; 7        ; 46           ; 54           ; 28           ; 36                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3 V Schmitt Trigger ; --                        ; User                 ; 0         ;
 ; KEY[1]         ; A7    ; 7        ; 49           ; 54           ; 28           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3 V Schmitt Trigger ; --                        ; User                 ; 0         ;
-; MAX10_CLK1_50  ; P11   ; 3        ; 34           ; 0            ; 28           ; 34                    ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL           ; --                        ; User                 ; 0         ;
+; MAX10_CLK1_50  ; P11   ; 3        ; 34           ; 0            ; 28           ; 36                    ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL           ; --                        ; User                 ; 0         ;
 ; MAX10_CLK2_50  ; N14   ; 6        ; 78           ; 29           ; 21           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL           ; --                        ; User                 ; 0         ;
 ; SW[0]          ; C10   ; 7        ; 51           ; 54           ; 28           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL           ; --                        ; User                 ; 0         ;
 ; SW[1]          ; C11   ; 7        ; 51           ; 54           ; 21           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL           ; --                        ; User                 ; 0         ;
@@ -1246,8 +1246,8 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+-----------------------------------------+----------------------+--------------+
 ; Compilation Hierarchy Node ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; ADC blocks ; Full Hierarchy Name                     ; Entity Name          ; Library Name ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+-----------------------------------------+----------------------+--------------+
-; |DE10_LITE_Golden_Top      ; 43 (1)      ; 34 (0)                    ; 0 (0)         ; 0           ; 0    ; 1          ; 0            ; 0       ; 0         ; 185  ; 0            ; 9 (1)        ; 0 (0)             ; 34 (0)           ; 0          ; |DE10_LITE_Golden_Top                   ; DE10_LITE_Golden_Top ; work         ;
-;    |chaser:led_chaser|     ; 42 (42)     ; 34 (34)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 34 (34)          ; 0          ; |DE10_LITE_Golden_Top|chaser:led_chaser ; chaser               ; work         ;
+; |DE10_LITE_Golden_Top      ; 59 (1)      ; 36 (0)                    ; 0 (0)         ; 0           ; 0    ; 1          ; 0            ; 0       ; 0         ; 185  ; 0            ; 23 (1)       ; 0 (0)             ; 36 (0)           ; 0          ; |DE10_LITE_Golden_Top                   ; DE10_LITE_Golden_Top ; work         ;
+;    |chaser:led_chaser|     ; 58 (58)     ; 36 (36)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 22 (22)      ; 0 (0)             ; 36 (36)          ; 0          ; |DE10_LITE_Golden_Top|chaser:led_chaser ; chaser               ; work         ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+-----------------------------------------+----------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1441,7 +1441,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; GPIO[34]        ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
 ; GPIO[35]        ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
 ; MAX10_CLK1_50   ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
-; KEY[0]          ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
+; KEY[0]          ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
 +-----------------+----------+---------------+---------------+-----------------------+-----+------+
 
 
@@ -1538,52 +1538,54 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; GPIO[35]                           ;                   ;         ;
 ; MAX10_CLK1_50                      ;                   ;         ;
 ; KEY[0]                             ;                   ;         ;
-;      - chaser:led_chaser|led_o[1]  ; 0                 ; 6       ;
-;      - chaser:led_chaser|led_o[2]  ; 0                 ; 6       ;
-;      - chaser:led_chaser|led_o[3]  ; 0                 ; 6       ;
-;      - chaser:led_chaser|led_o[4]  ; 0                 ; 6       ;
-;      - chaser:led_chaser|led_o[5]  ; 0                 ; 6       ;
-;      - chaser:led_chaser|led_o[6]  ; 0                 ; 6       ;
-;      - chaser:led_chaser|led_o[7]  ; 0                 ; 6       ;
-;      - chaser:led_chaser|led_o[8]  ; 0                 ; 6       ;
-;      - chaser:led_chaser|led_o[9]  ; 0                 ; 6       ;
-;      - chaser:led_chaser|cnt_o[1]  ; 0                 ; 6       ;
-;      - chaser:led_chaser|cnt_o[2]  ; 0                 ; 6       ;
-;      - chaser:led_chaser|cnt_o[3]  ; 0                 ; 6       ;
-;      - chaser:led_chaser|cnt_o[4]  ; 0                 ; 6       ;
-;      - chaser:led_chaser|cnt_o[5]  ; 0                 ; 6       ;
-;      - chaser:led_chaser|cnt_o[6]  ; 0                 ; 6       ;
-;      - chaser:led_chaser|cnt_o[7]  ; 0                 ; 6       ;
-;      - chaser:led_chaser|cnt_o[8]  ; 0                 ; 6       ;
-;      - chaser:led_chaser|cnt_o[9]  ; 0                 ; 6       ;
-;      - chaser:led_chaser|cnt_o[10] ; 0                 ; 6       ;
-;      - chaser:led_chaser|cnt_o[11] ; 0                 ; 6       ;
-;      - chaser:led_chaser|cnt_o[12] ; 0                 ; 6       ;
-;      - chaser:led_chaser|cnt_o[13] ; 0                 ; 6       ;
-;      - chaser:led_chaser|cnt_o[14] ; 0                 ; 6       ;
-;      - chaser:led_chaser|cnt_o[15] ; 0                 ; 6       ;
-;      - chaser:led_chaser|cnt_o[16] ; 0                 ; 6       ;
-;      - chaser:led_chaser|cnt_o[17] ; 0                 ; 6       ;
-;      - chaser:led_chaser|cnt_o[18] ; 0                 ; 6       ;
-;      - chaser:led_chaser|cnt_o[19] ; 0                 ; 6       ;
-;      - chaser:led_chaser|cnt_o[20] ; 0                 ; 6       ;
-;      - chaser:led_chaser|cnt_o[21] ; 0                 ; 6       ;
-;      - chaser:led_chaser|cnt_o[22] ; 0                 ; 6       ;
-;      - chaser:led_chaser|cnt_o[23] ; 0                 ; 6       ;
-;      - chaser:led_chaser|led_o[0]  ; 0                 ; 6       ;
-;      - chaser:led_chaser|cnt_o[0]  ; 0                 ; 6       ;
+;      - chaser:led_chaser|led_o[1]  ; 1                 ; 6       ;
+;      - chaser:led_chaser|led_o[2]  ; 1                 ; 6       ;
+;      - chaser:led_chaser|led_o[3]  ; 1                 ; 6       ;
+;      - chaser:led_chaser|led_o[4]  ; 1                 ; 6       ;
+;      - chaser:led_chaser|led_o[5]  ; 1                 ; 6       ;
+;      - chaser:led_chaser|led_o[6]  ; 1                 ; 6       ;
+;      - chaser:led_chaser|led_o[7]  ; 1                 ; 6       ;
+;      - chaser:led_chaser|led_o[8]  ; 1                 ; 6       ;
+;      - chaser:led_chaser|led_o[9]  ; 1                 ; 6       ;
+;      - chaser:led_chaser|led_o[0]  ; 1                 ; 6       ;
+;      - chaser:led_chaser|directie  ; 1                 ; 6       ;
+;      - chaser:led_chaser|cnt_o[22] ; 1                 ; 6       ;
+;      - chaser:led_chaser|cnt_o[21] ; 1                 ; 6       ;
+;      - chaser:led_chaser|cnt_o[24] ; 1                 ; 6       ;
+;      - chaser:led_chaser|cnt_o[23] ; 1                 ; 6       ;
+;      - chaser:led_chaser|cnt_o[18] ; 1                 ; 6       ;
+;      - chaser:led_chaser|cnt_o[17] ; 1                 ; 6       ;
+;      - chaser:led_chaser|cnt_o[20] ; 1                 ; 6       ;
+;      - chaser:led_chaser|cnt_o[19] ; 1                 ; 6       ;
+;      - chaser:led_chaser|cnt_o[14] ; 1                 ; 6       ;
+;      - chaser:led_chaser|cnt_o[13] ; 1                 ; 6       ;
+;      - chaser:led_chaser|cnt_o[16] ; 1                 ; 6       ;
+;      - chaser:led_chaser|cnt_o[15] ; 1                 ; 6       ;
+;      - chaser:led_chaser|cnt_o[11] ; 1                 ; 6       ;
+;      - chaser:led_chaser|cnt_o[12] ; 1                 ; 6       ;
+;      - chaser:led_chaser|cnt_o[10] ; 1                 ; 6       ;
+;      - chaser:led_chaser|cnt_o[9]  ; 1                 ; 6       ;
+;      - chaser:led_chaser|cnt_o[7]  ; 1                 ; 6       ;
+;      - chaser:led_chaser|cnt_o[5]  ; 1                 ; 6       ;
+;      - chaser:led_chaser|cnt_o[8]  ; 1                 ; 6       ;
+;      - chaser:led_chaser|cnt_o[6]  ; 1                 ; 6       ;
+;      - chaser:led_chaser|cnt_o[4]  ; 1                 ; 6       ;
+;      - chaser:led_chaser|cnt_o[3]  ; 1                 ; 6       ;
+;      - chaser:led_chaser|cnt_o[2]  ; 1                 ; 6       ;
+;      - chaser:led_chaser|cnt_o[1]  ; 1                 ; 6       ;
+;      - chaser:led_chaser|cnt_o[0]  ; 1                 ; 6       ;
 +------------------------------------+-------------------+---------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Control Signals                                                                                                                                          ;
-+-----------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; Name                        ; Location           ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+-----------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; KEY[0]                      ; PIN_B8             ; 34      ; Async. clear ; no     ; --                   ; --               ; --                        ;
-; MAX10_CLK1_50               ; PIN_P11            ; 34      ; Clock        ; yes    ; Global Clock         ; GCLK19           ; --                        ;
-; chaser:led_chaser|always1~7 ; LCCOMB_X54_Y53_N18 ; 10      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-+-----------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Control Signals                                                                                                                                        ;
++----------------------------+-------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; Name                       ; Location          ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++----------------------------+-------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; KEY[0]                     ; PIN_B8            ; 36      ; Async. clear ; no     ; --                   ; --               ; --                        ;
+; MAX10_CLK1_50              ; PIN_P11           ; 36      ; Clock        ; yes    ; Global Clock         ; GCLK19           ; --                        ;
+; chaser:led_chaser|Equal0~7 ; LCCOMB_X47_Y52_N6 ; 24      ; Clock enable ; no     ; --                   ; --               ; --                        ;
++----------------------------+-------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1591,7 +1593,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 ; Name          ; Location ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +---------------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; MAX10_CLK1_50 ; PIN_P11  ; 34      ; 0                                    ; Global Clock         ; GCLK19           ; --                        ;
+; MAX10_CLK1_50 ; PIN_P11  ; 36      ; 4                                    ; Global Clock         ; GCLK19           ; --                        ;
 +---------------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
 
@@ -1600,68 +1602,68 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+------------------------+
 ; Routing Resource Type ; Usage                  ;
 +-----------------------+------------------------+
-; Block interconnects   ; 29 / 148,641 ( < 1 % ) ;
-; C16 interconnects     ; 0 / 5,382 ( 0 % )      ;
-; C4 interconnects      ; 18 / 106,704 ( < 1 % ) ;
-; Direct links          ; 9 / 148,641 ( < 1 % )  ;
+; Block interconnects   ; 76 / 148,641 ( < 1 % ) ;
+; C16 interconnects     ; 1 / 5,382 ( < 1 % )    ;
+; C4 interconnects      ; 27 / 106,704 ( < 1 % ) ;
+; Direct links          ; 30 / 148,641 ( < 1 % ) ;
 ; Global clocks         ; 1 / 20 ( 5 % )         ;
-; Local interconnects   ; 36 / 49,760 ( < 1 % )  ;
+; Local interconnects   ; 40 / 49,760 ( < 1 % )  ;
 ; NSLEEPs               ; 0 / 500 ( 0 % )        ;
-; R24 interconnects     ; 0 / 5,406 ( 0 % )      ;
-; R4 interconnects      ; 22 / 147,764 ( < 1 % ) ;
+; R24 interconnects     ; 1 / 5,406 ( < 1 % )    ;
+; R4 interconnects      ; 34 / 147,764 ( < 1 % ) ;
 +-----------------------+------------------------+
 
 
-+---------------------------------------------------------------------------+
-; LAB Logic Elements                                                        ;
-+---------------------------------------------+-----------------------------+
-; Number of Logic Elements  (Average = 10.75) ; Number of LABs  (Total = 4) ;
-+---------------------------------------------+-----------------------------+
-; 1                                           ; 1                           ;
-; 2                                           ; 0                           ;
-; 3                                           ; 0                           ;
-; 4                                           ; 0                           ;
-; 5                                           ; 0                           ;
-; 6                                           ; 0                           ;
-; 7                                           ; 0                           ;
-; 8                                           ; 0                           ;
-; 9                                           ; 0                           ;
-; 10                                          ; 0                           ;
-; 11                                          ; 0                           ;
-; 12                                          ; 1                           ;
-; 13                                          ; 0                           ;
-; 14                                          ; 0                           ;
-; 15                                          ; 2                           ;
-; 16                                          ; 0                           ;
-+---------------------------------------------+-----------------------------+
++--------------------------------------------------------------------------+
+; LAB Logic Elements                                                       ;
++--------------------------------------------+-----------------------------+
+; Number of Logic Elements  (Average = 9.83) ; Number of LABs  (Total = 6) ;
++--------------------------------------------+-----------------------------+
+; 1                                          ; 1                           ;
+; 2                                          ; 0                           ;
+; 3                                          ; 1                           ;
+; 4                                          ; 0                           ;
+; 5                                          ; 0                           ;
+; 6                                          ; 0                           ;
+; 7                                          ; 1                           ;
+; 8                                          ; 0                           ;
+; 9                                          ; 0                           ;
+; 10                                         ; 0                           ;
+; 11                                         ; 0                           ;
+; 12                                         ; 0                           ;
+; 13                                         ; 0                           ;
+; 14                                         ; 0                           ;
+; 15                                         ; 0                           ;
+; 16                                         ; 3                           ;
++--------------------------------------------+-----------------------------+
 
 
 +------------------------------------------------------------------+
 ; LAB-wide Signals                                                 ;
 +------------------------------------+-----------------------------+
-; LAB-wide Signals  (Average = 1.50) ; Number of LABs  (Total = 4) ;
+; LAB-wide Signals  (Average = 1.67) ; Number of LABs  (Total = 6) ;
 +------------------------------------+-----------------------------+
-; 1 Async. clear                     ; 3                           ;
-; 1 Clock                            ; 3                           ;
+; 1 Async. clear                     ; 5                           ;
+; 1 Clock                            ; 5                           ;
 +------------------------------------+-----------------------------+
 
 
 +----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                        ;
 +----------------------------------------------+-----------------------------+
-; Number of Signals Sourced  (Average = 19.25) ; Number of LABs  (Total = 4) ;
+; Number of Signals Sourced  (Average = 15.83) ; Number of LABs  (Total = 6) ;
 +----------------------------------------------+-----------------------------+
 ; 0                                            ; 0                           ;
 ; 1                                            ; 1                           ;
 ; 2                                            ; 0                           ;
 ; 3                                            ; 0                           ;
 ; 4                                            ; 0                           ;
-; 5                                            ; 0                           ;
+; 5                                            ; 1                           ;
 ; 6                                            ; 0                           ;
 ; 7                                            ; 0                           ;
 ; 8                                            ; 0                           ;
 ; 9                                            ; 0                           ;
-; 10                                           ; 0                           ;
+; 10                                           ; 1                           ;
 ; 11                                           ; 0                           ;
 ; 12                                           ; 0                           ;
 ; 13                                           ; 0                           ;
@@ -1673,49 +1675,73 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 19                                           ; 0                           ;
 ; 20                                           ; 0                           ;
 ; 21                                           ; 0                           ;
-; 22                                           ; 1                           ;
+; 22                                           ; 0                           ;
 ; 23                                           ; 0                           ;
-; 24                                           ; 0                           ;
+; 24                                           ; 1                           ;
 ; 25                                           ; 0                           ;
-; 26                                           ; 0                           ;
-; 27                                           ; 2                           ;
+; 26                                           ; 1                           ;
+; 27                                           ; 0                           ;
+; 28                                           ; 0                           ;
+; 29                                           ; 1                           ;
 +----------------------------------------------+-----------------------------+
 
 
 +-------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                       ;
 +-------------------------------------------------+-----------------------------+
-; Number of Signals Sourced Out  (Average = 4.25) ; Number of LABs  (Total = 4) ;
+; Number of Signals Sourced Out  (Average = 8.33) ; Number of LABs  (Total = 6) ;
 +-------------------------------------------------+-----------------------------+
 ; 0                                               ; 0                           ;
 ; 1                                               ; 1                           ;
 ; 2                                               ; 0                           ;
-; 3                                               ; 2                           ;
+; 3                                               ; 1                           ;
 ; 4                                               ; 0                           ;
 ; 5                                               ; 0                           ;
 ; 6                                               ; 0                           ;
-; 7                                               ; 0                           ;
+; 7                                               ; 1                           ;
 ; 8                                               ; 0                           ;
 ; 9                                               ; 0                           ;
-; 10                                              ; 1                           ;
+; 10                                              ; 0                           ;
+; 11                                              ; 1                           ;
+; 12                                              ; 1                           ;
+; 13                                              ; 0                           ;
+; 14                                              ; 0                           ;
+; 15                                              ; 0                           ;
+; 16                                              ; 1                           ;
 +-------------------------------------------------+-----------------------------+
 
 
-+---------------------------------------------------------------------------+
-; LAB Distinct Inputs                                                       ;
-+---------------------------------------------+-----------------------------+
-; Number of Distinct Inputs  (Average = 3.25) ; Number of LABs  (Total = 4) ;
-+---------------------------------------------+-----------------------------+
-; 0                                           ; 0                           ;
-; 1                                           ; 0                           ;
-; 2                                           ; 1                           ;
-; 3                                           ; 1                           ;
-; 4                                           ; 0                           ;
-; 5                                           ; 0                           ;
-; 6                                           ; 0                           ;
-; 7                                           ; 0                           ;
-; 8                                           ; 1                           ;
-+---------------------------------------------+-----------------------------+
++----------------------------------------------------------------------------+
+; LAB Distinct Inputs                                                        ;
++----------------------------------------------+-----------------------------+
+; Number of Distinct Inputs  (Average = 10.17) ; Number of LABs  (Total = 6) ;
++----------------------------------------------+-----------------------------+
+; 0                                            ; 0                           ;
+; 1                                            ; 0                           ;
+; 2                                            ; 0                           ;
+; 3                                            ; 0                           ;
+; 4                                            ; 0                           ;
+; 5                                            ; 0                           ;
+; 6                                            ; 0                           ;
+; 7                                            ; 1                           ;
+; 8                                            ; 1                           ;
+; 9                                            ; 0                           ;
+; 10                                           ; 1                           ;
+; 11                                           ; 0                           ;
+; 12                                           ; 1                           ;
+; 13                                           ; 0                           ;
+; 14                                           ; 0                           ;
+; 15                                           ; 0                           ;
+; 16                                           ; 0                           ;
+; 17                                           ; 0                           ;
+; 18                                           ; 0                           ;
+; 19                                           ; 0                           ;
+; 20                                           ; 0                           ;
+; 21                                           ; 0                           ;
+; 22                                           ; 0                           ;
+; 23                                           ; 0                           ;
+; 24                                           ; 1                           ;
++----------------------------------------------+-----------------------------+
 
 
 +------------------------------------------+
@@ -2037,12 +2063,12 @@ Info (332144): No user constrained base clocks found in the design
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
 Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
-Info (176353): Automatically promoted node MAX10_CLK1_50~input (placed in PIN P11 (CLK7p, DIFFIO_TX_RX_B20p, DIFFOUT_B20p, High_Speed)) File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 37
+Info (176353): Automatically promoted node MAX10_CLK1_50~input (placed in PIN P11 (CLK7p, DIFFIO_TX_RX_B20p, DIFFOUT_B20p, High_Speed)) File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 37
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G19
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:02
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:04
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
@@ -2064,177 +2090,177 @@ Warning (334000): Timing characteristics of device 10M50DAF484C6GES are prelimin
 Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:02
 Warning (169177): 88 pins must meet Intel FPGA requirements for 3.3-, 3.0-, and 2.5-V interfaces. For more information, refer to AN 447: Interfacing MAX 10 Devices with 3.3/3.0/2.5-V LVTTL/LVCMOS I/O Systems.
-    Info (169178): Pin ADC_CLK_10 uses I/O standard 3.3-V LVTTL at N5 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 33
-    Info (169178): Pin MAX10_CLK2_50 uses I/O standard 3.3-V LVTTL at N14 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 41
-    Info (169178): Pin KEY[1] uses I/O standard 3.3 V Schmitt Trigger at A7 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 81
-    Info (169178): Pin SW[0] uses I/O standard 3.3-V LVTTL at C10 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 91
-    Info (169178): Pin SW[1] uses I/O standard 3.3-V LVTTL at C11 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 91
-    Info (169178): Pin SW[2] uses I/O standard 3.3-V LVTTL at D12 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 91
-    Info (169178): Pin SW[3] uses I/O standard 3.3-V LVTTL at C12 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 91
-    Info (169178): Pin SW[4] uses I/O standard 3.3-V LVTTL at A12 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 91
-    Info (169178): Pin SW[5] uses I/O standard 3.3-V LVTTL at B12 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 91
-    Info (169178): Pin SW[6] uses I/O standard 3.3-V LVTTL at A13 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 91
-    Info (169178): Pin SW[7] uses I/O standard 3.3-V LVTTL at A14 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 91
-    Info (169178): Pin SW[8] uses I/O standard 3.3-V LVTTL at B14 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 91
-    Info (169178): Pin SW[9] uses I/O standard 3.3-V LVTTL at F15 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 91
-    Info (169178): Pin GSENSOR_INT[1] uses I/O standard 3.3-V LVTTL at Y14 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 106
-    Info (169178): Pin GSENSOR_INT[2] uses I/O standard 3.3-V LVTTL at Y13 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 106
-    Info (169178): Pin DRAM_DQ[0] uses I/O standard 3.3-V LVTTL at Y21 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 52
-    Info (169178): Pin DRAM_DQ[1] uses I/O standard 3.3-V LVTTL at Y20 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 52
-    Info (169178): Pin DRAM_DQ[2] uses I/O standard 3.3-V LVTTL at AA22 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 52
-    Info (169178): Pin DRAM_DQ[3] uses I/O standard 3.3-V LVTTL at AA21 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 52
-    Info (169178): Pin DRAM_DQ[4] uses I/O standard 3.3-V LVTTL at Y22 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 52
-    Info (169178): Pin DRAM_DQ[5] uses I/O standard 3.3-V LVTTL at W22 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 52
-    Info (169178): Pin DRAM_DQ[6] uses I/O standard 3.3-V LVTTL at W20 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 52
-    Info (169178): Pin DRAM_DQ[7] uses I/O standard 3.3-V LVTTL at V21 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 52
-    Info (169178): Pin DRAM_DQ[8] uses I/O standard 3.3-V LVTTL at P21 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 52
-    Info (169178): Pin DRAM_DQ[9] uses I/O standard 3.3-V LVTTL at J22 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 52
-    Info (169178): Pin DRAM_DQ[10] uses I/O standard 3.3-V LVTTL at H21 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 52
-    Info (169178): Pin DRAM_DQ[11] uses I/O standard 3.3-V LVTTL at H22 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 52
-    Info (169178): Pin DRAM_DQ[12] uses I/O standard 3.3-V LVTTL at G22 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 52
-    Info (169178): Pin DRAM_DQ[13] uses I/O standard 3.3-V LVTTL at G20 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 52
-    Info (169178): Pin DRAM_DQ[14] uses I/O standard 3.3-V LVTTL at G19 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 52
-    Info (169178): Pin DRAM_DQ[15] uses I/O standard 3.3-V LVTTL at F22 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 52
-    Info (169178): Pin GSENSOR_SDI uses I/O standard 3.3-V LVTTL at V11 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 108
-    Info (169178): Pin GSENSOR_SDO uses I/O standard 3.3-V LVTTL at V12 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 109
-    Info (169178): Pin ARDUINO_IO[0] uses I/O standard 3.3-V LVTTL at AB5 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 114
-    Info (169178): Pin ARDUINO_IO[1] uses I/O standard 3.3-V LVTTL at AB6 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 114
-    Info (169178): Pin ARDUINO_IO[2] uses I/O standard 3.3-V LVTTL at AB7 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 114
-    Info (169178): Pin ARDUINO_IO[3] uses I/O standard 3.3-V LVTTL at AB8 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 114
-    Info (169178): Pin ARDUINO_IO[4] uses I/O standard 3.3-V LVTTL at AB9 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 114
-    Info (169178): Pin ARDUINO_IO[5] uses I/O standard 3.3-V LVTTL at Y10 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 114
-    Info (169178): Pin ARDUINO_IO[6] uses I/O standard 3.3-V LVTTL at AA11 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 114
-    Info (169178): Pin ARDUINO_IO[7] uses I/O standard 3.3-V LVTTL at AA12 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 114
-    Info (169178): Pin ARDUINO_IO[8] uses I/O standard 3.3-V LVTTL at AB17 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 114
-    Info (169178): Pin ARDUINO_IO[9] uses I/O standard 3.3-V LVTTL at AA17 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 114
-    Info (169178): Pin ARDUINO_IO[10] uses I/O standard 3.3-V LVTTL at AB19 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 114
-    Info (169178): Pin ARDUINO_IO[11] uses I/O standard 3.3-V LVTTL at AA19 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 114
-    Info (169178): Pin ARDUINO_IO[12] uses I/O standard 3.3-V LVTTL at Y19 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 114
-    Info (169178): Pin ARDUINO_IO[13] uses I/O standard 3.3-V LVTTL at AB20 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 114
-    Info (169178): Pin ARDUINO_IO[14] uses I/O standard 3.3-V LVTTL at AB21 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 114
-    Info (169178): Pin ARDUINO_IO[15] uses I/O standard 3.3-V LVTTL at AA20 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 114
-    Info (169178): Pin ARDUINO_RESET_N uses I/O standard 3.3-V LVTTL at F16 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 115
-    Info (169178): Pin GPIO[0] uses I/O standard 3.3-V LVTTL at V10 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[1] uses I/O standard 3.3-V LVTTL at W10 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[2] uses I/O standard 3.3-V LVTTL at V9 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[3] uses I/O standard 3.3-V LVTTL at W9 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[4] uses I/O standard 3.3-V LVTTL at V8 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[5] uses I/O standard 3.3-V LVTTL at W8 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[6] uses I/O standard 3.3-V LVTTL at V7 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[7] uses I/O standard 3.3-V LVTTL at W7 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[8] uses I/O standard 3.3-V LVTTL at W6 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[9] uses I/O standard 3.3-V LVTTL at V5 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[10] uses I/O standard 3.3-V LVTTL at W5 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[11] uses I/O standard 3.3-V LVTTL at AA15 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[12] uses I/O standard 3.3-V LVTTL at AA14 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[13] uses I/O standard 3.3-V LVTTL at W13 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[14] uses I/O standard 3.3-V LVTTL at W12 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[15] uses I/O standard 3.3-V LVTTL at AB13 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[16] uses I/O standard 3.3-V LVTTL at AB12 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[17] uses I/O standard 3.3-V LVTTL at Y11 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[18] uses I/O standard 3.3-V LVTTL at AB11 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[19] uses I/O standard 3.3-V LVTTL at W11 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[20] uses I/O standard 3.3-V LVTTL at AB10 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[21] uses I/O standard 3.3-V LVTTL at AA10 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[22] uses I/O standard 3.3-V LVTTL at AA9 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[23] uses I/O standard 3.3-V LVTTL at Y8 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[24] uses I/O standard 3.3-V LVTTL at AA8 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[25] uses I/O standard 3.3-V LVTTL at Y7 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[26] uses I/O standard 3.3-V LVTTL at AA7 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[27] uses I/O standard 3.3-V LVTTL at Y6 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[28] uses I/O standard 3.3-V LVTTL at AA6 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[29] uses I/O standard 3.3-V LVTTL at Y5 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[30] uses I/O standard 3.3-V LVTTL at AA5 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[31] uses I/O standard 3.3-V LVTTL at Y4 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[32] uses I/O standard 3.3-V LVTTL at AB3 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[33] uses I/O standard 3.3-V LVTTL at Y3 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[34] uses I/O standard 3.3-V LVTTL at AB2 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin GPIO[35] uses I/O standard 3.3-V LVTTL at AA2 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169178): Pin MAX10_CLK1_50 uses I/O standard 3.3-V LVTTL at P11 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 37
-    Info (169178): Pin KEY[0] uses I/O standard 3.3 V Schmitt Trigger at B8 File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 81
+    Info (169178): Pin ADC_CLK_10 uses I/O standard 3.3-V LVTTL at N5 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 33
+    Info (169178): Pin MAX10_CLK2_50 uses I/O standard 3.3-V LVTTL at N14 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 41
+    Info (169178): Pin KEY[1] uses I/O standard 3.3 V Schmitt Trigger at A7 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 81
+    Info (169178): Pin SW[0] uses I/O standard 3.3-V LVTTL at C10 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 91
+    Info (169178): Pin SW[1] uses I/O standard 3.3-V LVTTL at C11 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 91
+    Info (169178): Pin SW[2] uses I/O standard 3.3-V LVTTL at D12 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 91
+    Info (169178): Pin SW[3] uses I/O standard 3.3-V LVTTL at C12 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 91
+    Info (169178): Pin SW[4] uses I/O standard 3.3-V LVTTL at A12 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 91
+    Info (169178): Pin SW[5] uses I/O standard 3.3-V LVTTL at B12 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 91
+    Info (169178): Pin SW[6] uses I/O standard 3.3-V LVTTL at A13 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 91
+    Info (169178): Pin SW[7] uses I/O standard 3.3-V LVTTL at A14 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 91
+    Info (169178): Pin SW[8] uses I/O standard 3.3-V LVTTL at B14 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 91
+    Info (169178): Pin SW[9] uses I/O standard 3.3-V LVTTL at F15 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 91
+    Info (169178): Pin GSENSOR_INT[1] uses I/O standard 3.3-V LVTTL at Y14 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 106
+    Info (169178): Pin GSENSOR_INT[2] uses I/O standard 3.3-V LVTTL at Y13 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 106
+    Info (169178): Pin DRAM_DQ[0] uses I/O standard 3.3-V LVTTL at Y21 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 52
+    Info (169178): Pin DRAM_DQ[1] uses I/O standard 3.3-V LVTTL at Y20 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 52
+    Info (169178): Pin DRAM_DQ[2] uses I/O standard 3.3-V LVTTL at AA22 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 52
+    Info (169178): Pin DRAM_DQ[3] uses I/O standard 3.3-V LVTTL at AA21 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 52
+    Info (169178): Pin DRAM_DQ[4] uses I/O standard 3.3-V LVTTL at Y22 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 52
+    Info (169178): Pin DRAM_DQ[5] uses I/O standard 3.3-V LVTTL at W22 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 52
+    Info (169178): Pin DRAM_DQ[6] uses I/O standard 3.3-V LVTTL at W20 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 52
+    Info (169178): Pin DRAM_DQ[7] uses I/O standard 3.3-V LVTTL at V21 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 52
+    Info (169178): Pin DRAM_DQ[8] uses I/O standard 3.3-V LVTTL at P21 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 52
+    Info (169178): Pin DRAM_DQ[9] uses I/O standard 3.3-V LVTTL at J22 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 52
+    Info (169178): Pin DRAM_DQ[10] uses I/O standard 3.3-V LVTTL at H21 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 52
+    Info (169178): Pin DRAM_DQ[11] uses I/O standard 3.3-V LVTTL at H22 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 52
+    Info (169178): Pin DRAM_DQ[12] uses I/O standard 3.3-V LVTTL at G22 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 52
+    Info (169178): Pin DRAM_DQ[13] uses I/O standard 3.3-V LVTTL at G20 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 52
+    Info (169178): Pin DRAM_DQ[14] uses I/O standard 3.3-V LVTTL at G19 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 52
+    Info (169178): Pin DRAM_DQ[15] uses I/O standard 3.3-V LVTTL at F22 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 52
+    Info (169178): Pin GSENSOR_SDI uses I/O standard 3.3-V LVTTL at V11 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 108
+    Info (169178): Pin GSENSOR_SDO uses I/O standard 3.3-V LVTTL at V12 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 109
+    Info (169178): Pin ARDUINO_IO[0] uses I/O standard 3.3-V LVTTL at AB5 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 114
+    Info (169178): Pin ARDUINO_IO[1] uses I/O standard 3.3-V LVTTL at AB6 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 114
+    Info (169178): Pin ARDUINO_IO[2] uses I/O standard 3.3-V LVTTL at AB7 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 114
+    Info (169178): Pin ARDUINO_IO[3] uses I/O standard 3.3-V LVTTL at AB8 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 114
+    Info (169178): Pin ARDUINO_IO[4] uses I/O standard 3.3-V LVTTL at AB9 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 114
+    Info (169178): Pin ARDUINO_IO[5] uses I/O standard 3.3-V LVTTL at Y10 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 114
+    Info (169178): Pin ARDUINO_IO[6] uses I/O standard 3.3-V LVTTL at AA11 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 114
+    Info (169178): Pin ARDUINO_IO[7] uses I/O standard 3.3-V LVTTL at AA12 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 114
+    Info (169178): Pin ARDUINO_IO[8] uses I/O standard 3.3-V LVTTL at AB17 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 114
+    Info (169178): Pin ARDUINO_IO[9] uses I/O standard 3.3-V LVTTL at AA17 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 114
+    Info (169178): Pin ARDUINO_IO[10] uses I/O standard 3.3-V LVTTL at AB19 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 114
+    Info (169178): Pin ARDUINO_IO[11] uses I/O standard 3.3-V LVTTL at AA19 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 114
+    Info (169178): Pin ARDUINO_IO[12] uses I/O standard 3.3-V LVTTL at Y19 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 114
+    Info (169178): Pin ARDUINO_IO[13] uses I/O standard 3.3-V LVTTL at AB20 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 114
+    Info (169178): Pin ARDUINO_IO[14] uses I/O standard 3.3-V LVTTL at AB21 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 114
+    Info (169178): Pin ARDUINO_IO[15] uses I/O standard 3.3-V LVTTL at AA20 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 114
+    Info (169178): Pin ARDUINO_RESET_N uses I/O standard 3.3-V LVTTL at F16 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 115
+    Info (169178): Pin GPIO[0] uses I/O standard 3.3-V LVTTL at V10 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[1] uses I/O standard 3.3-V LVTTL at W10 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[2] uses I/O standard 3.3-V LVTTL at V9 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[3] uses I/O standard 3.3-V LVTTL at W9 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[4] uses I/O standard 3.3-V LVTTL at V8 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[5] uses I/O standard 3.3-V LVTTL at W8 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[6] uses I/O standard 3.3-V LVTTL at V7 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[7] uses I/O standard 3.3-V LVTTL at W7 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[8] uses I/O standard 3.3-V LVTTL at W6 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[9] uses I/O standard 3.3-V LVTTL at V5 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[10] uses I/O standard 3.3-V LVTTL at W5 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[11] uses I/O standard 3.3-V LVTTL at AA15 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[12] uses I/O standard 3.3-V LVTTL at AA14 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[13] uses I/O standard 3.3-V LVTTL at W13 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[14] uses I/O standard 3.3-V LVTTL at W12 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[15] uses I/O standard 3.3-V LVTTL at AB13 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[16] uses I/O standard 3.3-V LVTTL at AB12 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[17] uses I/O standard 3.3-V LVTTL at Y11 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[18] uses I/O standard 3.3-V LVTTL at AB11 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[19] uses I/O standard 3.3-V LVTTL at W11 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[20] uses I/O standard 3.3-V LVTTL at AB10 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[21] uses I/O standard 3.3-V LVTTL at AA10 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[22] uses I/O standard 3.3-V LVTTL at AA9 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[23] uses I/O standard 3.3-V LVTTL at Y8 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[24] uses I/O standard 3.3-V LVTTL at AA8 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[25] uses I/O standard 3.3-V LVTTL at Y7 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[26] uses I/O standard 3.3-V LVTTL at AA7 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[27] uses I/O standard 3.3-V LVTTL at Y6 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[28] uses I/O standard 3.3-V LVTTL at AA6 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[29] uses I/O standard 3.3-V LVTTL at Y5 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[30] uses I/O standard 3.3-V LVTTL at AA5 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[31] uses I/O standard 3.3-V LVTTL at Y4 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[32] uses I/O standard 3.3-V LVTTL at AB3 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[33] uses I/O standard 3.3-V LVTTL at Y3 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[34] uses I/O standard 3.3-V LVTTL at AB2 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin GPIO[35] uses I/O standard 3.3-V LVTTL at AA2 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169178): Pin MAX10_CLK1_50 uses I/O standard 3.3-V LVTTL at P11 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 37
+    Info (169178): Pin KEY[0] uses I/O standard 3.3 V Schmitt Trigger at B8 File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 81
 Warning (169064): Following 71 pins have no output enable or a GND or VCC output enable - later changes to this connectivity may change fitting results
-    Info (169065): Pin DRAM_DQ[0] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 52
-    Info (169065): Pin DRAM_DQ[1] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 52
-    Info (169065): Pin DRAM_DQ[2] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 52
-    Info (169065): Pin DRAM_DQ[3] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 52
-    Info (169065): Pin DRAM_DQ[4] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 52
-    Info (169065): Pin DRAM_DQ[5] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 52
-    Info (169065): Pin DRAM_DQ[6] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 52
-    Info (169065): Pin DRAM_DQ[7] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 52
-    Info (169065): Pin DRAM_DQ[8] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 52
-    Info (169065): Pin DRAM_DQ[9] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 52
-    Info (169065): Pin DRAM_DQ[10] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 52
-    Info (169065): Pin DRAM_DQ[11] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 52
-    Info (169065): Pin DRAM_DQ[12] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 52
-    Info (169065): Pin DRAM_DQ[13] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 52
-    Info (169065): Pin DRAM_DQ[14] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 52
-    Info (169065): Pin DRAM_DQ[15] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 52
-    Info (169065): Pin GSENSOR_SDI has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 108
-    Info (169065): Pin GSENSOR_SDO has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 109
-    Info (169065): Pin ARDUINO_IO[0] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 114
-    Info (169065): Pin ARDUINO_IO[1] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 114
-    Info (169065): Pin ARDUINO_IO[2] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 114
-    Info (169065): Pin ARDUINO_IO[3] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 114
-    Info (169065): Pin ARDUINO_IO[4] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 114
-    Info (169065): Pin ARDUINO_IO[5] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 114
-    Info (169065): Pin ARDUINO_IO[6] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 114
-    Info (169065): Pin ARDUINO_IO[7] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 114
-    Info (169065): Pin ARDUINO_IO[8] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 114
-    Info (169065): Pin ARDUINO_IO[9] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 114
-    Info (169065): Pin ARDUINO_IO[10] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 114
-    Info (169065): Pin ARDUINO_IO[11] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 114
-    Info (169065): Pin ARDUINO_IO[12] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 114
-    Info (169065): Pin ARDUINO_IO[13] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 114
-    Info (169065): Pin ARDUINO_IO[14] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 114
-    Info (169065): Pin ARDUINO_IO[15] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 114
-    Info (169065): Pin ARDUINO_RESET_N has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 115
-    Info (169065): Pin GPIO[0] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[1] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[2] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[3] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[4] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[5] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[6] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[7] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[8] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[9] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[10] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[11] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[12] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[13] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[14] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[15] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[16] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[17] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[18] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[19] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[20] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[21] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[22] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[23] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[24] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[25] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[26] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[27] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[28] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[29] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[30] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[31] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[32] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[33] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[34] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-    Info (169065): Pin GPIO[35] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
-Info (144001): Generated suppressed messages file /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/output_files/led_chaser.fit.smsg
+    Info (169065): Pin DRAM_DQ[0] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 52
+    Info (169065): Pin DRAM_DQ[1] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 52
+    Info (169065): Pin DRAM_DQ[2] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 52
+    Info (169065): Pin DRAM_DQ[3] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 52
+    Info (169065): Pin DRAM_DQ[4] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 52
+    Info (169065): Pin DRAM_DQ[5] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 52
+    Info (169065): Pin DRAM_DQ[6] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 52
+    Info (169065): Pin DRAM_DQ[7] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 52
+    Info (169065): Pin DRAM_DQ[8] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 52
+    Info (169065): Pin DRAM_DQ[9] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 52
+    Info (169065): Pin DRAM_DQ[10] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 52
+    Info (169065): Pin DRAM_DQ[11] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 52
+    Info (169065): Pin DRAM_DQ[12] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 52
+    Info (169065): Pin DRAM_DQ[13] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 52
+    Info (169065): Pin DRAM_DQ[14] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 52
+    Info (169065): Pin DRAM_DQ[15] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 52
+    Info (169065): Pin GSENSOR_SDI has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 108
+    Info (169065): Pin GSENSOR_SDO has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 109
+    Info (169065): Pin ARDUINO_IO[0] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 114
+    Info (169065): Pin ARDUINO_IO[1] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 114
+    Info (169065): Pin ARDUINO_IO[2] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 114
+    Info (169065): Pin ARDUINO_IO[3] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 114
+    Info (169065): Pin ARDUINO_IO[4] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 114
+    Info (169065): Pin ARDUINO_IO[5] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 114
+    Info (169065): Pin ARDUINO_IO[6] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 114
+    Info (169065): Pin ARDUINO_IO[7] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 114
+    Info (169065): Pin ARDUINO_IO[8] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 114
+    Info (169065): Pin ARDUINO_IO[9] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 114
+    Info (169065): Pin ARDUINO_IO[10] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 114
+    Info (169065): Pin ARDUINO_IO[11] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 114
+    Info (169065): Pin ARDUINO_IO[12] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 114
+    Info (169065): Pin ARDUINO_IO[13] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 114
+    Info (169065): Pin ARDUINO_IO[14] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 114
+    Info (169065): Pin ARDUINO_IO[15] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 114
+    Info (169065): Pin ARDUINO_RESET_N has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 115
+    Info (169065): Pin GPIO[0] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[1] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[2] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[3] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[4] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[5] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[6] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[7] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[8] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[9] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[10] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[11] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[12] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[13] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[14] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[15] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[16] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[17] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[18] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[19] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[20] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[21] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[22] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[23] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[24] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[25] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[26] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[27] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[28] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[29] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[30] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[31] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[32] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[33] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[34] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+    Info (169065): Pin GPIO[35] has a permanently disabled output enable File: /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/DE10_LITE_Golden_Top.v Line: 122
+Info (144001): Generated suppressed messages file /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/output_files/led_chaser.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 8 warnings
-    Info: Peak virtual memory: 1382 megabytes
-    Info: Processing ended: Wed Mar 11 18:43:44 2026
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:15
+    Info: Peak virtual memory: 1390 megabytes
+    Info: Processing ended: Fri Mar 13 13:30:24 2026
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:18
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in /home/andreitm/Documents/proiectele_mele/led_chaser_implementat/output_files/led_chaser.fit.smsg.
+The suppressed messages can be found in /home/andreitm/Documents/proiectele_mele/LED_Mergator/led_chaser_implementat/output_files/led_chaser.fit.smsg.
 
 

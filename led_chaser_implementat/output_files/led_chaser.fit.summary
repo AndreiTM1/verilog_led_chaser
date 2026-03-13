@@ -1,14 +1,14 @@
-Fitter Status : Successful - Wed Mar 11 18:43:44 2026
+Fitter Status : Successful - Fri Mar 13 13:30:23 2026
 Quartus Prime Version : 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 Revision Name : led_chaser
 Top-level Entity Name : DE10_LITE_Golden_Top
 Family : MAX 10
 Device : 10M50DAF484C6GES
 Timing Models : Preliminary
-Total logic elements : 43 / 49,760 ( < 1 % )
-    Total combinational functions : 43 / 49,760 ( < 1 % )
-    Dedicated logic registers : 34 / 49,760 ( < 1 % )
-Total registers : 34
+Total logic elements : 59 / 49,760 ( < 1 % )
+    Total combinational functions : 59 / 49,760 ( < 1 % )
+    Dedicated logic registers : 36 / 49,760 ( < 1 % )
+Total registers : 36
 Total pins : 185 / 360 ( 51 % )
 Total virtual pins : 0
 Total memory bits : 0 / 1,677,312 ( 0 % )

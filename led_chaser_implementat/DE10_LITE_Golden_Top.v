@@ -135,9 +135,10 @@ module DE10_LITE_Golden_Top(
 //=======================================================
 
 
-chaser #(
+chaser_implementat #(
 	.LED(10),
-	.WIDTH(25)
+	.WIDTH(25),
+	.SPEED(33557432/5)
 )	led_chaser(
 	.clk_i	(MAX10_CLK1_50),
 	.rst_ni	(KEY[0]),
